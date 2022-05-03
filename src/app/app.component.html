@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <h1>Angular and LocalStorage</h1>
+<p>We, save your background color, if you want returns :) </p>
+  </div>
+  <div class="row">
+    <input
+      type="color"
+      #colorPicker
+      [value]="userBackgroundColor"
+      (change)="saveBackgroundColor(colorPicker.value)"
+    />
+  </div>
+  <button class="btn-remove" (click)="removePreferences()">
+    Remove preferences
+  </button>
+</div>
